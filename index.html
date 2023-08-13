@@ -1,31 +1,37 @@
-<!-- Your login/sign-up form here -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Management Tool</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="login-form">
-      <h1>Login</h1>
-      <form action="/login" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-    <div class="signup-form">
-      <h1>Sign Up</h1>
-      <form action="/signup" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
+  <header class="header">
+    <h1>Content Management Tool</h1>
+  </header>
+  <div class="content">
+    <h2>Welcome to the Content Management Tool!</h2>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title">
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea id="content" name="content" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        <input type="text" id="image" name="image">
+      </div>
+      <div class="form-group">
+        <label for="video">Video URL:</label>
+        <input type="text" id="video" name="video">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Create Blog">
+      </div>
+      
+    </form>
   </div>
 </body>
 </html>
